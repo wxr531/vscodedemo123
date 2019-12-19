@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>dshjgdh</title>
+<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- 自己编写的js -->
+
+</head>
+<body>
+  <div id="app">
+    {{ message }}
+  
+<h2>测试图片链接开发,图片名：{{picturename1[0]}}</h2>
+
+<input type="text" value="输入框" id="picturetext">
+<button  id="button" v-on:click="changepicsrc">点击查询</button>
+<button  id="button" v-on:click="hiddenpicture">显示/隐藏</button>
+<img type="image" v-show="isShow" value="图片显示区域" id="picture" v-bind:src="pictureurl">
+</div>
+</body>
+</html>
+<script src="./index.js" ></script>
